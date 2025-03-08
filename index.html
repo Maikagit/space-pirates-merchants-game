@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Pirates and Merchants</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-overlay">
+            <div id="top-bar">
+                <div id="credits">Crédits: <span id="credits-value">1000</span></div>
+                <div id="cargo">Cargo: <span id="cargo-value">0</span>/<span id="cargo-max">100</span></div>
+                <div id="location">Localisation: <span id="current-location">Système Solaire</span></div>
+            </div>
+            <div id="game-menu" class="hidden">
+                <h2>Menu</h2>
+                <button id="resume-btn">Reprendre</button>
+                <button id="new-game-btn">Nouvelle Partie</button>
+                <button id="options-btn">Options</button>
+            </div>
+        </div>
+        <div id="trading-panel" class="side-panel hidden">
+            <h2>Commerce</h2>
+            <div id="market-items"></div>
+            <button id="close-trading-btn">Fermer</button>
+        </div>
+        <div id="shipyard-panel" class="side-panel hidden">
+            <h2>Chantier Naval</h2>
+            <div id="upgrade-items"></div>
+            <button id="close-shipyard-btn">Fermer</button>
+        </div>
+    </div>
+    <script src="js/engine.js"></script>
+    <script src="js/entities.js"></script>
+    <script src="js/universe.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
